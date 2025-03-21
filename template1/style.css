@@ -1,0 +1,483 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
+
+/*html, body{
+  height: 100%;
+}*/
+
+.col-xs-12 {
+    width: 93%;
+}  
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-image: url(asset/bg.jpg) !important;
+        background-size: cover;
+        background-position: center;
+}
+
+.page-wrapper{
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navbar-brand {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 2em !important;
+    color: whitesmoke !important;
+    
+}
+.navbar-brand-name{
+        font-family: "Dancing Script",
+        cursive;
+        font-weight: 700;
+        font-size: 2em !important;
+        color: whitesmoke !important;
+}
+.navbar{
+    background-image: url(asset/header.jpg);
+        /* box-shadow: 10px 10px 50px #5b5a5f,
+        -10px -10px 50px #48474f; */
+}
+.navbar li {
+    text-transform: capitalize;
+}
+
+.navbar-default{
+    border-color: transparent !important;
+    color: white;
+}
+.navbar-fixed-top{
+    border-width: 0px;
+    
+}
+
+.active a{
+    background-color: transparent !important;
+}
+
+
+.my-menu{
+    background-color: transparent;
+}
+.my-menu a{
+    color: white !important;
+    font-size: 18px;
+}
+
+#splash {
+    background-image: url(asset/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    color: #fff;
+    font-size: 3em;
+        height: 600px;
+        padding-top: 100px;
+        margin-top: 50px;
+        
+}
+
+#splash h1 {
+    font-size: 2em;
+}
+
+#splash a {
+    color: #fff;
+}
+
+#splash a:hover {
+    color: #e7e7e7;
+}
+
+#portfolio {
+    background-image: url(asset/profile.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+#portfolio h1 {
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail img {
+    min-height: 250px;
+    min-width: 300px;
+}
+
+.thumbnail-hover {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 99%;
+    width: 99%;
+    opacity: 0;
+    transition: 2s;
+}
+
+.thumbnail-hover:hover {
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    transition: .5s;
+    opacity: 1;
+    padding-top: 30%;
+    border-radius: 5px;
+}
+
+.thumbnail-hover i {
+    text-decoration: none;
+    color: white;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#about {
+    background-image: url(asset/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    color: #fff;
+}
+
+#about .container {
+    padding: 0 15px;
+}
+
+#about h1 {
+    font-size: 5em;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#perimg {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 30px;
+    border-radius: 50% !important;
+    box-shadow: 10px 10px 50px #373737,
+        -10px -10px 50px #404040;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+#about p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin: 0;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background-image:url(asset/work-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+#contact h1 {
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+}
+
+#contact hr{
+    margin-bottom: 50px;
+}
+#contact h2 {
+    font-size:30px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#contact p{
+    font-size: 20px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.5),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#contact address {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+#contact .fa-stack {
+    color: #333;
+}
+
+#contact .fa-stack:hover .fa-stack-1x {
+    color: #333;
+    transition: 0.5s;
+}
+
+#contact .fa-stack:hover .fa-stack-2x {
+    color: #fff;
+    transition: 0.5s;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+hr {
+    width: 25%;
+}
+
+.fa-3x{
+    font-size: 2em !important;
+        margin-left: 25px;
+}
+
+
+.fa-2x{
+    font-size: 1.5em !important;
+    margin-left: 25px;
+}
+
+.fa-1x{
+        font-size: 1em !important;
+        margin-left: 25px;
+}
+
+
+
+.col-lg-3 .img-circle{
+    border-radius: 50px !important;
+    box-shadow: 10px 10px 50px #373737,
+    -10px -10px 50px #404040;
+}
+
+
+.row-eq-height {
+    display: block;
+    align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (min-width: 0px) and (max-width: 799px) {
+
+    #splash{
+        min-height: 600px;
+        font-size: 2.5rem;
+        background-position:inherit;
+        padding-top: 150px;
+    }
+    #about{
+        padding: 40px 0;
+    }
+
+    #about h1{
+        font-size: 3em;
+    }
+    .row-eq-height{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #white-bg{
+        padding: 0px;
+        margin: 25px;
+    }
+    #perimg{
+        max-width: 200px;
+        width: 75%;
+        margin-bottom: 20px;
+    }
+    #contact{
+        padding-top:50px;
+        padding-bottom:50px
+    }
+    #contact h1{
+        font-size: 4.2rem;
+    }
+    #contact h2{
+        font-size: 25px;
+    }
+    #contact p {
+        font-size: 20px;
+        text-align: justify;
+    }
+    #contact hr{
+            margin-bottom: 25px;
+            width: 50%;
+    }
+    .about-text {
+        padding: 15px;
+    }
+    #about p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+
+     
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+#splash {
+    min-height: 600px;
+    font-size: 2.5rem;
+    background-position: inherit;
+    padding-top: 150px;
+}
+
+#about {
+    padding: 0px;
+}
+
+#about h1 {
+    font-size: 4.2rem;
+}
+
+#about p {
+    font-size: 1.25em;
+}
+
+#about img {
+    width: 350px;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-direction: row;
+}
+
+#white-bg {
+    padding: 0px;
+    margin: 25px;
+    width: 70%
+}
+
+#perimg {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+#contact h1 {
+    font-size: 4.2rem;
+}
+
+#contact h2 {
+    font-size: 25px;
+}
+
+#contact p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#contact hr {
+    margin-bottom: 25px;
+    width: 50%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #perimg {
+        max-width: 250px;
+    }
+    
+    #about p {
+        font-size: 1.3em;
+    }
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .navbar-brand-name {
+    font-size: 2em;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Social icons responsive spacing */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icon {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/* Improve spacing on mobile */
+@media (max-width: 768px) {
+  #about, #contact {
+    padding: 40px 15px;
+  }
+  
+  .row {
+    margin-bottom: 30px;
+  }
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#white-bg {
+    margin: 0;
+    padding: 0;
+}
+
+
