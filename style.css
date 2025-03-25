@@ -166,6 +166,41 @@ body {
   transform: rotateY(-80deg);
 }
 
+/* Visitor Counter */
+.visitor-counter {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.visitor-counter img {
+  height: 25px;
+  margin-top: 5px;
+}
+
+.visitor-counter i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.visitor-counter #visitor-count {
+  font-weight: bold;
+  margin: 0 5px;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+  .visitor-counter {
+    margin: 10px 0;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-section h1 {

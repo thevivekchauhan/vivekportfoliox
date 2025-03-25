@@ -34,6 +34,22 @@ Sbtn.onclick = function() {
     localStorage.setItem("github", om.value)
     localStorage.setItem("persimage", ommi.value)
         //localStorage.setItem("personal", uio)*/
-
-
 }
+
+// Visitor Counter Implementation
+function updateVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    
+    // If first visit or count doesn't exist
+    if (!count) {
+        count = 1;
+    } else {
+        count = parseInt(count) + 1;
+    }
+    
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitor-count').textContent = count;
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', updateVisitorCount);
